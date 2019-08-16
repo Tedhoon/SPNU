@@ -23,3 +23,8 @@ Django에 Django Rest Framework를 얹어 API 서버를, react로 프론트엔�
 frontend : 최정혜 <br>
 backend : 김태훈
 
+***
+
+## PIP LIST
+<li>djangorestframework
+<li>django-cors-headers
