@@ -15,7 +15,7 @@ Django에 Django Rest Framework를 얹어 API 서버를, react로 프론트엔�
 <li>Python : 3.6.5
 <li>Django : 2.1.8
 <li>Django Rest Framework
-<li>Create-React_App
+<li>Create-React-App
 
 *** 
 
@@ -27,4 +27,4 @@ backend : 김태훈
 
 ## PIP LIST
 <li>djangorestframework
-<li>django-cors-headers
+<li>django-cors-headers# SPNU

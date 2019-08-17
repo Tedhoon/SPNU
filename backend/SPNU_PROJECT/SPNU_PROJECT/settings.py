@@ -49,7 +49,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',     #django_react 연동
+    'django.middleware.common.CommonMiddleware', #django_react 연동
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -132,10 +133,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend', 'build', 'static')
+    os.path.join(BASE_DIR, 'frontend', 'build', 'static') #django_react 연동
 ]
 
 
-CORS_ORIGIN_WHITELIST = (
+CORS_ORIGIN_WHITELIST = (   #django_react 연동
     'http://localhost:3000',
 )
