@@ -27,4 +27,4 @@ backend : 김태훈
 
 ## PIP LIST
 <li>djangorestframework
-<li>django-cors-headers# SPNU
+<li>django-cors-headers
