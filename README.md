@@ -28,3 +28,6 @@ backend : 김태훈
 ## PIP LIST
 <li>djangorestframework
 <li>django-cors-headers
+
+
+
