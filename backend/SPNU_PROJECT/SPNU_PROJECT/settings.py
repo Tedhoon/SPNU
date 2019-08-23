@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # app_list
     'SPNU_index',
     'SPNU_notice',
+    'userpost',
 
     # api
     'rest_framework',
@@ -140,3 +141,8 @@ STATICFILES_DIRS = [
 CORS_ORIGIN_WHITELIST = (   #django_react 연동
     'http://localhost:3000',
 )
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 4
+}

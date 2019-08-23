@@ -1,0 +1,62 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C;C:\Users\82106\Desktop\SPNU\myvenv\Scripts;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\82106\bin;C:\Users\82106\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\82106\bin;C:\Users\82106\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Program Files\PuTTY;C:\Program Files\Redis;C:\Ruby26-x64\bin;C:\Users\82106\AppData\Local\Programs\Python\Python36-32\Scripts;C:\Users\82106\AppData\Local\Programs\Python\Python36-32;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\82106\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\82106\AppData\Roaming\npm;C:\Users\82106\AppData\Local\Yarn\bin;C:\Users\82106\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\82106\Desktop\SPNU\frontend\package.json: Unexpected token } in JSON at position 649
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:304:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "frontend",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "react": "^16.9.0",
+      "react-dom": "^16.9.0",
+      "react-scripts": "3.1.1"
+    },
+    "proxy": "http://localhost:8000",
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

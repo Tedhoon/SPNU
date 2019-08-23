@@ -7,7 +7,7 @@ class App extends Component {
 
     async componentDidMount() {
         try {
-            const res = await fetch('http://127.0.0.1:8000/SPNU_notice');
+            const res = await fetch('http://127.0.0.1:8000/SPNU_notice/');
             const Boards = await res.json();
             this.setState({
                 Boards
@@ -15,7 +15,7 @@ class App extends Component {
         } catch (e) {
             console.log(e);
         }
-    }
+    };
 
     render() {
         return (

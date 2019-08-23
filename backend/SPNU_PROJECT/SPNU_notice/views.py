@@ -1,13 +1,14 @@
 from django.shortcuts import render
 
-from rest_framework import generics
+from rest_framework import viewsets
 from .models import Board
 from .serializers import BoardSerializer
 
-class BoardList(generics.ListCreateAPIView):
-    queryset = Board.objects.all()
-    serializer_class = BoardSerializer
+from .pagination import Mypagination
 
-class BoardDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Board.objects.all()
+#using generic class-based views
+
+class BoardViewSet(viewsets.ModelViewSet): #list, retrieve 
+    queryset = Board.objects.all().order_by('id')
     serializer_class = BoardSerializer
+    pagination_class = Mypagination

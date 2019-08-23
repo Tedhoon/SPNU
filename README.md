@@ -29,5 +29,7 @@ backend : 김태훈
 <li>djangorestframework
 <li>django-cors-headers
 
+<li>npm install --save axios
+
 
 
