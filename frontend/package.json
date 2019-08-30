@@ -31,9 +31,7 @@
       "last 1 safari version"
     ]
   },
-  "description": "정혜",
-  "main": "index.js",
-  "devDependencies": {},
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
 }
