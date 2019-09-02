@@ -12,8 +12,7 @@ class Notice extends Component {
     }
 
     async componentDidMount(){
-        this._getBoards();
-        
+        this._getBoards();   
     }
 
     _renderBoard = () => {
@@ -26,7 +25,9 @@ class Notice extends Component {
             <span>{Board.text}</span>
             <span>{Board.created_date}</span>
             <span>{Board.hits}</span>
-            </div>)
+
+            </div>
+            )
         })
         return Boards
 
@@ -39,7 +40,7 @@ class Notice extends Component {
         const Boards = await axios
         .get('http://127.0.0.1:8000/SPNU_notice/')
         .then(({ data })=> {
-            console.log(data);
+            console.log(data.results);
             this.setState(
               { Boards : data.results }
             );
@@ -47,7 +48,7 @@ class Notice extends Component {
           })
         .catch((err)=> {})
         console.log(Boards)
-        
+
       }
 
 
@@ -56,6 +57,7 @@ class Notice extends Component {
             <div>
                 <h1> hello world </h1>
                 {this.state.Boards ? this._renderBoard() : "loading"}
+                
             </div>
         )
     }

@@ -37,6 +37,7 @@ class NoticePost extends Component {
         const title = this.state.title
         const text = this.state.text
 
+
         axios.post('http://127.0.0.1:8000/SPNU_notice/', {title : title, text : text})
         .then(res=>console.log(res))
         .catch(err=>console.log(err))

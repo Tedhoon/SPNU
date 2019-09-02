@@ -10,6 +10,9 @@ import Lost from './incontent/lost/Lost';
 import ContentsName from './ContentsName';
 
 import NoticePost from './incontent/notice/NoticePost';
+// import NoticeDetail from './incontent/notice/Notice_detail';
+import NoticeLink from './incontent/notice/NoticeLink';
+
 
 class Board extends Component {
     render(){
@@ -19,8 +22,10 @@ class Board extends Component {
                 <SideBar/>
                 <ContentsName/>
                 <Route path="/board/SPNU_notice" component={Notice}/>
-                <Route exact path="/board/SPNU_notice/post" component={NoticePost} /> 
-
+                <Route path="/board/SPNU_notice/post" component={NoticePost} /> 
+                <Route path="/board/SPNU_notice/:id" component={NoticeLink} />
+                
+                
                 <Route path="/board/SPNU_promotion" component={Promotion}/>
                 <Route path="/board/SPNU_life" component={Life}/>
                 <Route path="/board/SPNU_delivery" component={Delivery}/>
@@ -32,3 +37,6 @@ class Board extends Component {
 }
 
 export default Board;
+
+
+
